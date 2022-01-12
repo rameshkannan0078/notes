@@ -1,38 +1,261 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+    background-color:#000000;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .dbody{
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .dbody .Add-data{
+    height: 150px;
+    width: 200px;
+    padding: 30px;
+    background-color: rgb(104, 7, 0);
+    border: 4px solid red;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
   }
-}
+  .dc-box {
+    height:100px;
+    width: 100%;
+    border:0px solid rgb(14, 192, 23);
+    margin-left:0px;
+    border-radius: 0px;
+   
+  }
+  .reactloading{
+    margin: auto;
+    margin-top: 100px;
+  }
+  .header{
+    width: 100%;
+    height: 100px;
+  }
+  .toggle{
+    width: 150px;
+    height: 50px;
+    margin: auto;
+  }
+  .toggle .toggle-button{
+   
+    width:150px;
+    height: 50px;
+    margin: auto;
+  }
+  
+  input{
+    padding: 10px;
+    margin-bottom: 4px;
+  }
+  button{
+    padding:10px;
+    width:70px;
+  }
+  
+   h1{
+    margin-left: 0px;
+    margin-top: 10px;
+    text-align: center;
+    color:white;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  }
+  
+  
+  .dc-table{
+   
+  background-color:transparent ;
+    border:0px solid rgba(21, 21, 160, 0.534);
+    margin-left: 150px;
+  
+  }
+  .dc-table {
+    width:600px;
+    margin: auto;
+    background-color:	#171717;
+    border: 5px solid rgb(221, 220, 214);
+    box-shadow: 10px 10px grey;
+  }
+  
+  
+  .dc-table tbody tr{
+    width:800px;
+    height: 50px;
+  }
+  .dc-table tbody tr:hover {background-color: rgb(136, 136, 123);}
+  
+  
+  
+  
+  
+  
+  .dc-table tbody tr td{
+    color: aliceblue;
+    width: 500px;
+    text-align: center;
+  }
+  .dc-table tbody tr td button{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+  }
+  .dc-table tbody tr .dialogbox-input input{
+    margin: auto;
+    width: 300px;
+    margin-left: 150px;
+    padding: 10px;
+    margin-bottom: 4px;
+  
+  }
+  
+  
+  
+  .dc-table tbody tr .dialogbox-input button{
+    width: 100px;
+    margin: auto;
+    margin-left: 250px;
+  }
+  
+  img{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .update-data input{
+    float:right;
+  } 
+  
+  p{
+    text-align: center;
+  }
+  
+  .reactdialogbox{
+    width:20%;
+    background-color: aqua;
+    color:white;
+    height:65;
+  }
+  
+  
+  
+  @media (max-width:600px){
+   
+  
+    body{
+      background-color:#000000;
+    }
+    .dbody{
+      width: 100%;
+    }
+    
+    .dbody .Add-data{
+      height: 150px;
+      width: 170px;
+      background-color: rgb(104, 7, 0);
+      border: 4px solid red;
+      margin: auto;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .dc-box {
+      height:100px;
+      width: 100%;
+      border:0px solid rgb(14, 192, 23);
+      margin-left:0px;
+      border-radius: 0px;
+     
+    }
+    .header{
+      width: 100%;
+      height: 100px;
+    }
+    .toggle{
+      width: 150px;
+      height: 50px;
+      margin: auto;
+    }
+    .toggle .toggle-button{
+     
+      width:150px;
+      height: 50px;
+      margin: auto;
+    }
+    input{
+      width: 100px;
+      margin-bottom: 4px;
+    }
+  
+    
+     h1{
+      margin-left: 0px;
+      margin-top: 10px;
+      text-align: center;
+      color:white;
+      font-size: 20px;
+      padding: 10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    }
+    .dc-table{
+     
+    background-color:transparent ;
+      border:0px solid rgba(21, 21, 160, 0.534);
+    
+    }
+    .dc-table {
+      width:300px;
+      background-color:	#171717;
+      border: 5px solid rgb(221, 220, 214);
+      box-shadow: 10px 10px grey;
+    }
+    
+    
+    .dc-table tbody tr{
+      width:50px;
+      height: 50px;
+    }
+    .dc-table tbody tr:hover {background-color: rgb(136, 136, 123);}
+    
+    
+    
+    
+    
+    
+    .dc-table tbody tr td{
+      color: aliceblue;
+      width: 10px;
+      text-align: center;
+    }
+    .dc-table tbody tr td button{
+      text-align: center;
+    }
+    p{
+      text-align: center;
+    }
+    .dc-table tbody tr .dialogbox-input input{
+      margin: auto;
+      padding: 10px;
+      width: 140px;
+      margin-bottom: 4px;
+    
+    }
+    
+    
+    
+    .dc-table tbody tr .dialogbox-input button{
+      width: 100px;
+      margin: auto;
+    }
+    
+    img{
+      width: 20px;
+      height: 20px;
+    }
+    
+    .update-data input{
+      float:right;
+    } 
+    
+  
+  }
